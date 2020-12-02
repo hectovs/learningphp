@@ -25,9 +25,9 @@
 <body>
 
     <ul>
-        <?php foreach($names as $name): ?>
+        <?php foreach($person as $feature => $value): ?>
 
-            <li><?= $name; ?></li>
+            <li><strong> <?= $feature.':' ?> </strong> <?= $value; ?></li>
         
         <?php endforeach; ?>
 
@@ -37,13 +37,7 @@
 
 
 
-        <?php
-            foreach ($names as $name){
-    
-            echo "<li>$name</li>";
 
-            }
-        ?>
     </ul>
 
 </body>

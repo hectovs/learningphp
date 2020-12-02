@@ -1,15 +1,16 @@
 <?php
 
-$names=[
-    'James',
+$person=[
+    'age' => 26,
+    'hair colour' => 'brown',
+    'name' => 'James'
         
-    'Hector',
-        
-    'John'
 ];
 
+$person['name'] = 'John';
 
+die(var_dump($person));
 
-require 'index.view.php'; 
+// require 'index.view.php'; 
 
 
