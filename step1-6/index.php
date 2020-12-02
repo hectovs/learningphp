@@ -1,16 +1,15 @@
 <?php
 
-$person=[
-    'age' => 26,
-    'hair colour' => 'brown',
-    'name' => 'James'
+$task=[
+    'title' => 'Learn more php',
+    'due' => 'today',
+    'assigned to' => 'Me',
+    'completed' => false
         
 ];
 
-$person['name'] = 'John';
 
-die(var_dump($person));
 
-// require 'index.view.php'; 
+require 'index.view.php'; 
 
 

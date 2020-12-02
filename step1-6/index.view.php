@@ -24,20 +24,21 @@
 
 <body>
 
-    <ul>
-        <?php foreach($person as $feature => $value): ?>
+    <h1>Task for Today</h1>
 
-            <li><strong> <?= $feature.':' ?> </strong> <?= $value; ?></li>
-        
+    <ul>
+        <?php foreach ($task as $heading => $value): ?>
+
+            <li> 
+                <strong> <?= ucwords($heading) ?>: </strong> <?= $value ?>
+            </li> 
+
+
         <?php endforeach; ?>
 
-
-
-
-
-
-
-
+        <li>
+            <strong>Completed : </strong>  <?= $task['completed']? 'Complete' : 'Incomplete' ?>
+        </li>
     </ul>
 
 </body>
